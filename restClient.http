@@ -1,0 +1,9 @@
+POST https://elemes-api.herokuapp.com/api/auth/register
+
+content-type: application/json
+{
+  "fullName": "iya",
+  "email": "iya@gmail.com",
+  "password": "123",
+  "password_confirmation": "123"
+}

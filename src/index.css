@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap');
+
+@layer components {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h5 {
+        @apply font-outfit
+    }
+
+    p,
+    span,
+    small {
+        @apply font-raleway
+    }
+
+}
