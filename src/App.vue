@@ -39,6 +39,9 @@ export default {
       this.scrollPosition = scrollY;
     },
   },
+  beforeMount() {
+    document.title = "Ikhfan Yusuf";
+  },
   mounted() {
     window.addEventListener("scroll", this.updateScroll);
   },
