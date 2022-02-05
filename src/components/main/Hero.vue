@@ -47,6 +47,7 @@
         but I can also work on the back end.</span
       >
       <button
+        @click="$emit('click', 'contact')"
         class="
           rounded-full
           font-outfit
@@ -58,9 +59,22 @@
           text-sm
         "
       >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 inline-block mr-1 animate-bounce"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M14.707 10.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 12.586V5a1 1 0 012 0v7.586l2.293-2.293a1 1 0 011.414 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
         HIRE ME
       </button>
-      <button
+      <a
+        href="https://wa.me/6285810923499"
         class="
           rounded-full
           font-outfit
@@ -70,8 +84,21 @@
           text-white text-sm
         "
       >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 inline-block mr-1"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"
+          />
+          <path
+            d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"
+          />
+        </svg>
         WHATSAPP
-      </button>
+      </a>
     </div>
     <img
       class="w-11/12 md:w-7/12 md:ml-48 transition ease-in-out duration-700"
@@ -96,6 +123,7 @@
       >
       <div class="text-center">
         <button
+          @click="$emit('click', 'contact')"
           class="
             rounded-full
             font-outfit
@@ -107,9 +135,22 @@
             text-sm
           "
         >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 inline-block mr-1 animate-bounce"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M14.707 10.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 12.586V5a1 1 0 012 0v7.586l2.293-2.293a1 1 0 011.414 0z"
+              clip-rule="evenodd"
+            />
+          </svg>
           HIRE ME
         </button>
-        <button
+        <a
+          href="https://wa.me/6285810923499"
           class="
             rounded-full
             font-outfit
@@ -119,8 +160,21 @@
             text-white text-sm
           "
         >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 inline-block mr-1"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"
+            />
+            <path
+              d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"
+            />
+          </svg>
           WHATSAPP
-        </button>
+        </a>
       </div>
     </div>
 

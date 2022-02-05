@@ -98,7 +98,7 @@
       >
         <li
           @click="
-            scroll('hero');
+            $emit('click', 'hero');
             showMobileNav();
           "
           class="py-3 md:py-6 px-6 md:px-0"
@@ -113,7 +113,7 @@
         </li>
         <li
           @click="
-            scroll('skills');
+            $emit('click', 'skills');
             showMobileNav();
           "
           class="py-3 md:py-6 px-6 md:px-0 md:ml-20"
@@ -128,7 +128,7 @@
         </li>
         <li
           @click="
-            scroll('projects');
+            $emit('click', 'projects');
             showMobileNav();
           "
           class="py-3 md:py-6 px-6 md:px-0 md:ml-20"
@@ -144,7 +144,7 @@
         </li>
         <li
           @click="
-            scroll('contact');
+            $emit('click', 'contact');
             showMobileNav();
           "
           class="py-3 md:py-6 px-6 md:px-0 md:ml-20"
@@ -198,11 +198,7 @@ export default {
     showMobileNav() {
       this.mobileNavShow = !this.mobileNavShow;
     },
-    scroll(id) {
-      document.getElementById(id).scrollIntoView({
-        behavior: "smooth",
-      });
-    },
+
     getElementOffset() {
       this.elementOffsetTop.heroOffsetTop =
         document.getElementById("hero").offsetTop;
@@ -226,6 +222,7 @@ export default {
   },
   watch: {},
   props: ["scrollPosition"],
+  emits: ["click"],
 };
 </script>
 

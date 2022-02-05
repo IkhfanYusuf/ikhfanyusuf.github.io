@@ -1,8 +1,8 @@
 <template>
   <div class="font-raleway text-main-text">
-    <Header :scrollPosition="scrollPosition" />
+    <Header @click="scroll" :scrollPosition="scrollPosition" />
     <main class="">
-      <Hero />
+      <Hero @click="scroll" />
       <Skills :scrollPosition="scrollPosition" />
       <Projects :scrollPosition="scrollPosition" />
       <Contact :scrollPosition="scrollPosition" />
@@ -37,6 +37,11 @@ export default {
   methods: {
     updateScroll() {
       this.scrollPosition = scrollY;
+    },
+    scroll(id) {
+      document.getElementById(id).scrollIntoView({
+        behavior: "smooth",
+      });
     },
   },
   beforeMount() {
