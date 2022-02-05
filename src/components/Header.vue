@@ -101,7 +101,7 @@
             $emit('click', 'hero');
             showMobileNav();
           "
-          class="py-3 md:py-6 px-6 md:px-0"
+          class="py-3 md:py-6 px-6 md:px-0 cursor-pointer"
           :class="{
             'border-l-4 md:border-b-4 md:border-l-0 border-yellow-custom':
               scrollPosition >= elementOffsetTop.heroOffsetTop &&
@@ -116,7 +116,7 @@
             $emit('click', 'skills');
             showMobileNav();
           "
-          class="py-3 md:py-6 px-6 md:px-0 md:ml-20"
+          class="py-3 md:py-6 px-6 md:px-0 md:ml-20 cursor-pointer"
           :class="{
             'border-l-4 md:border-b-4 md:border-l-0 border-yellow-custom':
               scrollPosition >= elementOffsetTop.skillsOffsetTop &&
@@ -131,7 +131,7 @@
             $emit('click', 'projects');
             showMobileNav();
           "
-          class="py-3 md:py-6 px-6 md:px-0 md:ml-20"
+          class="py-3 md:py-6 px-6 md:px-0 md:ml-20 cursor-pointer"
           :class="{
             'border-l-4 md:border-b-4 md:border-l-0 border-yellow-custom':
               scrollPosition >= elementOffsetTop.projectsOffsetTop &&
@@ -147,7 +147,7 @@
             $emit('click', 'contact');
             showMobileNav();
           "
-          class="py-3 md:py-6 px-6 md:px-0 md:ml-20"
+          class="py-3 md:py-6 px-6 md:px-0 md:ml-20 cursor-pointer"
           :class="{
             'border-l-4 md:border-b-4 md:border-l-0 border-yellow-custom':
               scrollPosition >= elementOffsetTop.contactOffsetTop &&
