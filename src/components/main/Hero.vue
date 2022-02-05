@@ -1,7 +1,7 @@
 <template>
   <div
     id="hero"
-    class="hero relative pt-28 md:pb-0 px-4 md:px-24 bg-hero min-h-screen"
+    class="hero relative pt-24 pb-8 md:pb-0 px-4 md:px-24 bg-hero min-h-screen"
   >
     <h1
       class="
