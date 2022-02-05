@@ -114,13 +114,21 @@
               >
                 <path
                   d="M9.52495 17.657L4.57495 12.707L5.98895 11.293L9.52645 14.8265L9.52495 14.828L18.01 6.343L19.424 7.757L10.939 16.243L9.52595 17.656L9.52495 17.657Z"
-                  fill="#52B69A"
+                  fill="#8BD2BD"
                 /></svg
               >Message has been sent!</small
             >
             <small v-else-if="sent === 'sending'" class="mr-2"
               ><svg
-                class="animate-spin -ml-1 mr-3 h-4 w-4 inline-block text-white"
+                class="
+                  animate-spin
+                  -ml-1
+                  mr-3
+                  h-4
+                  w-4
+                  inline-block
+                  text-red-custom
+                "
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -163,8 +171,9 @@
 </template>
 
 <script>
+import Axios from "axios";
+
 export default {
-  name: "Contact",
   name: "Contact",
   data() {
     return {
