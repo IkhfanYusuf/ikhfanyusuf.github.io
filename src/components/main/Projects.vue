@@ -10,9 +10,9 @@
         'translate-x-0': scrollPosition > 1200,
       }"
     >
-      <h2 class="text-5xl font-bold mb-4">My Latest Projects</h2>
-      <span class="mb-8 inline-block"
-        >We create beautifull websites with modern framework.</span
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">My Latest Projects</h2>
+      <span class="inline-block"
+        >We create beautifull websites with modern frameworks.</span
       >
     </div>
 
@@ -33,7 +33,7 @@
           pagination: false,
         }"
       >
-        <SplideSlide class="py-8 drop-shadow-xl">
+        <SplideSlide class="py-6 md:py-8 drop-shadow-xl">
           <div class="bg-white pt-6 rounded-xl overflow-hidden">
             <div class="px-6">
               <h4 class="mb-1 text-xl font-semibold">Laravel 8</h4>
@@ -45,7 +45,7 @@
             <img src="@/assets/img/beatme.png" alt="" />
           </div>
         </SplideSlide>
-        <SplideSlide class="drop-shadow-xl py-8">
+        <SplideSlide class="py-6 md:py-8 drop-shadow-xl">
           <div class="bg-white pt-6 rounded-xl overflow-hidden">
             <div class="px-6">
               <h4 class="mb-1 text-xl font-semibold">Vue Web App</h4>
