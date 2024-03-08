@@ -13,7 +13,7 @@ jobs:
         name: Checkout
         uses: actions/checkout@v3
       -
-        name: Gen dummy page
+        name: Install and build
         run: |
           npm install
           npm run build
